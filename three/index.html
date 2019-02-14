@@ -48,15 +48,17 @@
 
 
 	<div class="container">
-		<div class="row">
-			<div class="col-md-5">
-				<div class="mobile-anim">
-					<img src="mobile.png" alt="">
-					<img class="stage one" src="image-one.png" alt="">
-					<img class="stage two" src="image-2.png" alt="">
+		<div class="row flex-center">
+			<div class="col-md-4 text-center">
+				<div class="mobile-anim-wrap">
+					<div class="mobile-anim">
+						<img src="img/mobile.png" alt="">
+						<img class="stage one" src="img/image-one.png" alt="">
+						<img class="stage two" src="img/image-two.png" alt="">
+					</div>
 				</div>
 			</div>
-			<div class="col-md-7">
+			<div class="col-md-8 col-lg-6 col-lg-offset-1">
 				<div class="main-content-wrap">
 					<div class="steps-wrap one">
 						<div class="yellow-block">
@@ -74,12 +76,17 @@
 							Up<br>
 							to
 						</p>
-						<img class="million-img" src="million-tzs.png" alt="">
+						<img class="million-img" src="img/million-tzs.png" alt="">
 					</div>
 
 					<div class="steps-wrap three">
 						<div class="anim-money-block">
-
+							<img class="coin-main one" src="img/coin.svg" alt="">
+							<img class="coin-main two" src="img/coin.svg" alt="">
+							<img class="coin one" src="img/coin.svg" alt="">
+							<img class="coin two" src="img/coin.svg" alt="">
+							<img class="coin three" src="img/coin.svg" alt="">
+							<img class="coin four" src="img/coin.svg" alt="">
 						</div>
 						<a href="#" class="main-btn">
 							GET BONUS
@@ -99,7 +106,7 @@
 
 					<a id="term-btn" href="#" class="term-btn">
 						<div class="icon-block">
-							<img src="/img/information-symbol.svg" alt="">
+							<img src="img/information-symbol.svg" alt="">
 						</div>
 						Terms of action.
 					</a>
@@ -115,16 +122,16 @@
 							18+
 						</a>
 						<a href="#" class="social-link">
-							<img src="/img/facebook.svg" alt="">
+							<img src="img/facebook.svg" alt="">
 						</a>
 						<a href="#" class="social-link">
-							<img src="/img/facebook.svg" alt="">
+							<img src="img/facebook.svg" alt="">
 						</a>
 						<a href="#" class="social-link">
-							<img src="/img/instagram.svg" alt="">
+							<img src="img/instagram.svg" alt="">
 						</a>
 						<a href="#" class="social-link">
-							<img src="/img/twitter.svg" alt="">
+							<img src="img/twitter.svg" alt="">
 						</a>
 					</div>
 				</div>
@@ -169,15 +176,28 @@
     }
 
 	function loop() {
-        $('.animate-block').addClass('do');
-		setTimeout(function () {
-			$('.animate-block').removeClass('do');
-			setTimeout(function () {
-                loop();
-            },2600);
-        },3000)
+        $('.mobile-anim').addClass('do');
+        $('.coin-main.two').animate({opacity:1},200,function () {
+            $('.coin.two').animate({opacity:1},200,function () {
+                $('.coin.three').animate({opacity:1},200,function () {
+                    $('.coin.four').animate({opacity:1},200,function () {
+                        setTimeout(function () {
+                            $('.mobile-anim').removeClass('do');
+//                            $('.coin-main,.coin').removeAttr('style');
+                            $('.coin-main.two,.coin.two,.coin.three,.coin.four').animate({opacity:0},300);
+                            setTimeout(function () {
+                                loop();
+                            },3000);
+                        },5000);
+                    });
+                });
+            });
+        });
+
     }
-//    loop();
+    setTimeout(function () {
+        loop();
+    },3000);
 </script>
 
 </body>
