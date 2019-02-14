@@ -1,0 +1,154 @@
+h1,
+h2,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.pari-land {
+  background-image: url(http://pari-match/img/andre-hunter-719911-unsplash-copy.png);
+  height: 100vh;
+  background-size: cover;
+  /* background-size: auto 100%; */
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  padding: 7vh 0;
+}
+.pari-land header {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.pari-land header .logo {
+  width: 216px;
+  height: 51px;
+  object-fit: contain;
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .pari-land header .logo {
+    width: 170px;
+    height: 40px;
+  }
+}
+.pari-land header .login-btn {
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 2px;
+  border: solid 1px #ffffff;
+  line-height: 38px;
+  padding: 0 25px;
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+  outline: 0;
+  text-decoration: none;
+  transition: 0.4s all;
+}
+.pari-land header .login-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.pari-land header .login-text {
+  color: #fff900;
+}
+.pari-land .terms-wrap .img-block {
+  text-align: center;
+  margin-top: 11vh;
+  height: 48vh;
+  overflow: hidden;
+  transition: 0.7s all;
+}
+.pari-land .terms-wrap .img-block img {
+  max-width: 100%;
+  max-height: 48vh;
+  height: 100%;
+  object-fit: contain;
+}
+.pari-land .terms-wrap .term-btn {
+  width: 360px;
+  max-width: 100%;
+  transition: 0.7s all;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 6.4vh;
+  height: 6.4vh;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  outline: 0;
+}
+.pari-land .terms-wrap .terms-info {
+  height: 0;
+  overflow-x: hidden;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(62, 40, 41, 0.55);
+  transition: 0.7s all;
+  padding: 0 25px;
+  overflow-y: auto;
+}
+.pari-land .terms-wrap .terms-info::-webkit-scrollbar {
+  width: 1em;
+}
+.pari-land .terms-wrap .terms-info::-webkit-scrollbar-track {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(62, 40, 41, 0.55);
+}
+.pari-land .terms-wrap .terms-info::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.pari-land .terms-wrap .terms-info p.text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.42;
+  color: #ffffff;
+}
+.pari-land .terms-wrap .terms-info p.text:first-child {
+  margin-top: 25px;
+}
+.pari-land .terms-wrap .terms-info p.text:last-child {
+  margin-bottom: 25px;
+}
+.pari-land .terms-wrap.active .term-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.pari-land .terms-wrap.active .terms-info {
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.pari-land .terms-wrap.active .img-block {
+  height: 0;
+  margin-top: 0;
+}
+.pari-land .main-btn {
+  width: 360px;
+  max-width: 100%;
+  background-color: #fcd227;
+  border-radius: 4px;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 7.4vh;
+  height: 7.4vh;
+  transition: 0.4s all;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  display: block;
+  margin: 5vh auto 3vh;
+  box-shadow: 0 2px 4px 0 rgba(62, 40, 41, 0.55), 0 2px 4px 0 rgba(62, 40, 41, 0.55);
+  text-decoration: none;
+  outline: 0;
+}
+.pari-land .main-btn:hover {
+  background-color: #ba9603;
+}

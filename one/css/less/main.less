@@ -1,0 +1,170 @@
+@font-400: 'Roboto', sans-serif;
+@font-700: 'Roboto', sans-serif;
+
+
+@color-1: #ffffff;
+@color-2: #000000;
+@color-3: #fcd227;
+@color-3-text: #fff900;
+
+h1,h2,p {
+  margin-top:0;
+  margin-bottom: 0;
+}
+
+.pari-land {
+	background-image: url(../../img/andre-hunter-719911-unsplash-copy.png);
+	height: 100vh;
+    //background-size: 100% auto;
+    background-size: cover;
+    /* background-size: auto 100%; */
+	background-position: 50% 40%;
+    background-repeat: no-repeat;
+	//padding: 70px 0;
+	padding: 7vh 0;
+	header {
+		color: @color-1;
+		font-family: @font-700;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 24px;
+		.logo {
+			width: 216px;
+			height: 51px;
+			object-fit: contain;
+			//max-height: 7vh;
+			max-width: 100%;
+			@media(max-width:991px) {
+				width: 170px;
+				height: 40px;
+			}
+		}
+		.login-btn {
+			font-weight: bold;
+			font-size: 14px;
+			border-radius: 2px;
+			border: solid 1px @color-1;
+			line-height: 38px;
+			padding: 0 25px;
+			display: inline-block;
+			text-align: center;
+			color: @color-1;
+			outline: 0;
+			text-decoration: none;
+			transition: 0.4s all;
+			&:hover {
+				background-color: @color-1;
+				color: @color-2;
+			}
+		}
+		.login-text {
+			color: @color-3-text;
+		}
+	}
+	
+
+	.terms-wrap {
+		.img-block {
+			text-align: center;
+			//margin-top: 120px;
+			margin-top: 11vh;
+			height: 48vh;
+			overflow: hidden;
+			transition: 0.7s all;			
+			img {
+				max-width: 100%;
+				max-height: 48vh;
+				height: 100%;
+				//width: 100%;
+				object-fit: contain;
+			}
+		}
+		.term-btn  {
+			width: 360px;
+			max-width: 100%;
+			transition: 0.7s all;
+			padding:0;
+			font-family: @font-700;
+			font-size: 24px;
+			font-weight: bold;
+			line-height: 6.4vh;
+			height: 6.4vh;
+			text-align: center;
+			color: @color-1;
+			display: block;
+			margin: 0 auto;
+			text-decoration: none;
+			outline: 0;
+			}
+			.terms-info {
+				height: 0;
+				overflow-x: hidden;
+				border-radius: 4px;
+				box-shadow: 0 2px 4px 0 rgba(62, 40, 41, 0.55);
+				transition: 0.7s all;
+				padding: 0 25px;
+				overflow-y: auto;
+
+				&::-webkit-scrollbar {
+					width: 1em;}
+				&::-webkit-scrollbar-track {
+					-webkit-box-shadow: 0 2px 4px 0 rgba(62, 40, 41, 0.55);
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: darkgrey;
+					outline: 1px solid slategrey;
+				}
+
+				p.text {
+					font-family: @font-400;
+					font-weight: 400;
+					font-size: 24px;
+					line-height: 1.42;
+					color: @color-1;
+					&:first-child {margin-top:25px;}
+					&:last-child {margin-bottom:25px;}
+				}
+		}
+		&.active {
+			.term-btn  {
+				background-color: rgba(0, 0, 0, 0.5);
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+					
+			}
+			.terms-info {
+				height: 60vh;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.img-block {
+				height: 0;
+				margin-top:0;
+			}
+		}
+	}
+		.main-btn {
+			width: 360px;
+			max-width: 100%;
+			background-color: @color-3;
+			border-radius: 4px;
+			padding:0;
+			font-family: @font-700;
+			font-size: 24px;
+			font-weight: bold;
+			line-height: 7.4vh;
+			height: 7.4vh;
+			transition: 0.4s all;
+			text-transform: uppercase;
+			text-align: center;
+			color: @color-2;
+			display: block;
+			//margin: 50px auto 30px;
+			margin: 5vh auto 3vh;
+			box-shadow: 0 2px 4px 0 rgba(62, 40, 41, 0.55), 0 2px 4px 0 rgba(62, 40, 41, 0.55);
+			text-decoration: none;
+			outline: 0;
+			&:hover {
+				background-color: darken(@color-3,20%);
+			}
+		}
+	}

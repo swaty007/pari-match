@@ -1,0 +1,585 @@
+h1,
+                                               h2,
+                                               p {
+                                                 margin-top: 0;
+                                                 margin-bottom: 0;
+                                               }
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px!important;
+  }
+}
+.pari-land {
+  background-image: url(http://pari-match2/img/bg.png);
+  background-size: cover;
+  /* background-size: auto 100%; */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 150px;
+}
+@media (max-width: 991px) {
+  .pari-land {
+    padding-top: 20px;
+  }
+}
+.pari-land header {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.pari-land header .logo {
+  width: 216px;
+  height: 51px;
+  object-fit: contain;
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .pari-land header .logo {
+    width: 170px;
+    height: 40px;
+  }
+}
+.pari-land header .logo-text {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.pari-land header .login-btn {
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 2px;
+  border: solid 1px #ffffff;
+  line-height: 38px;
+  padding: 0 50px;
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+  outline: 0;
+  text-decoration: none;
+  transition: 0.4s all;
+}
+@media (max-width: 991px) {
+  .pari-land header .login-btn {
+    padding: 0 20px;
+  }
+}
+.pari-land header .login-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+@media (max-width: 991px) {
+  .pari-land .main-content-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .pari-land .main-content-wrap .title {
+    order: 1;
+  }
+  .pari-land .main-content-wrap .text,
+  .pari-land .main-content-wrap .steps-wrap {
+    order: 2;
+  }
+  .pari-land .main-content-wrap .text {
+    text-align: center;
+  }
+  .pari-land .main-content-wrap .main-btn {
+    order: 1;
+  }
+}
+.pari-land .title {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 80px;
+  margin-top: 0;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .pari-land .title {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 21px;
+  }
+}
+@media (max-width: 400px) {
+  .pari-land .title {
+    margin-left: 40px;
+  }
+}
+.pari-land .title span {
+  color: #f0cb31;
+  font-size: 41px;
+}
+@media (max-width: 991px) {
+  .pari-land .title span {
+    font-size: 32px;
+  }
+}
+.pari-land .title:before {
+  content: "";
+  background-image: url(http://pari-match2/img/megaphone.svg);
+  background-size: 25px 24px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  transform: rotateY(180deg) rotateZ(-20deg);
+}
+@media (max-width: 467px) {
+  .pari-land .title:before {
+    left: -40px;
+  }
+}
+.pari-land .text {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+.pari-land .steps-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 342px;
+  max-width: 100%;
+  margin-bottom: 140px;
+}
+@media (max-width: 991px) {
+  .pari-land .steps-wrap {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.pari-land .steps-wrap .steps-blocks-wrap {
+  width: 70px;
+  position: relative;
+}
+.pari-land .steps-wrap .steps-blocks-wrap .steps-block {
+  box-shadow: 0 0 9px 1px #000000;
+  border-radius: 5px;
+  background-color: #ffffff;
+  height: 70px;
+  text-align: center;
+  padding: 14px 0;
+}
+.pari-land .steps-wrap .steps-blocks-wrap .steps-block .step-img {
+  height: 100%;
+}
+.pari-land .steps-wrap .steps-blocks-wrap .step-text {
+  position: absolute;
+  top: 85px;
+  left: -18px;
+  right: -18px;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+}
+@media (max-width: 768px) {
+  .pari-land .steps-wrap .steps-blocks-wrap .step-text {
+    left: -11px;
+    right: -11px;
+  }
+}
+.pari-land .steps-wrap .play-img {
+  width: 12px;
+  height: 17px;
+}
+.pari-land .term-btn {
+  max-width: 100%;
+  transition: 0.7s all;
+  padding: 0;
+  color: #888888;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  outline: 0;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: middle;
+  margin-top: 55px;
+}
+@media (max-width: 991px) {
+  .pari-land .term-btn {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+.pari-land .term-btn .icon-block {
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #888888;
+  display: inline-block;
+  padding: 8px 0;
+  line-height: 0;
+  border-radius: 35px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.pari-land .term-btn .icon-block img {
+  height: 100%;
+}
+.pari-land .social-link-wrap {
+  text-align: right;
+}
+.pari-land .social-link-wrap .social-text {
+  color: #888888;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.pari-land .social-link-wrap .social-link {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #888888;
+  display: inline-block;
+  margin-left: 15px;
+  padding: 8px 0;
+  line-height: 0;
+  border-radius: 35px;
+  text-align: center;
+}
+.pari-land .social-link-wrap .social-link img {
+  height: 100%;
+}
+.pari-land hr.line {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  border-top: 1px solid #626262;
+}
+.pari-land .main-btn {
+  width: 344px;
+  max-width: 100%;
+  background-image: linear-gradient(to top, #e7ac33 0%, #f0cd31 100%);
+  border-radius: 5px;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 42px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 42px;
+  transition: 0.4s all;
+  text-align: center;
+  color: #000000;
+  display: block;
+  margin: 0;
+  box-shadow: 0 0 10px 1px rgba(254, 195, 16, 0.51);
+  text-decoration: none;
+  outline: 0;
+}
+@media (max-width: 991px) {
+  .pari-land .main-btn {
+    margin: 0 auto 40px;
+  }
+}
+.pari-land .main-btn:hover {
+  background-image: linear-gradient(to top, #a17213 0%, #ae910d 100%);
+}
+.pari-land .animate-wrap {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  max-width: 58%;
+  max-height: calc(100% - 150px);
+}
+@media (max-width: 991px) {
+  .pari-land .animate-wrap {
+    position: static;
+    order: 1;
+    max-height: 400px;
+    max-width: 100%;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.pari-land .animate-block {
+  position: relative;
+  width: 100%;
+}
+.pari-land .animate-block.do img.main,
+.pari-land .animate-block.do div.main {
+  visibility: hidden;
+}
+.pari-land .animate-block.do img.layers,
+.pari-land .animate-block.do div.layers {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start;
+  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
+}
+.pari-land .animate-block.do img.layers img,
+.pari-land .animate-block.do div.layers img {
+  opacity: 0;
+  transition: 4s all;
+}
+.pari-land .animate-block img,
+.pari-land .animate-block div {
+  max-width: 100%;
+}
+.pari-land .animate-block img.main,
+.pari-land .animate-block div.main {
+  position: relative;
+}
+.pari-land .animate-block img.layers,
+.pari-land .animate-block div.layers {
+  position: absolute;
+  background-size: 100% auto;
+  line-height: 0;
+}
+.pari-land .animate-block img.layers img,
+.pari-land .animate-block div.layers img {
+  width: 100%;
+  transition: 0.7s all;
+  opacity: 1;
+}
+.pari-land .animate-block img.layers.n1,
+.pari-land .animate-block div.layers.n1 {
+  top: 0%;
+  left: 0%;
+  max-width: 100%;
+  animation-duration: 0s;
+}
+.pari-land .animate-block img.layers.n2,
+.pari-land .animate-block div.layers.n2 {
+  top: 16.16%;
+  left: 23.4%;
+  max-width: 21.7%;
+}
+.pari-land .animate-block img.layers.n3,
+.pari-land .animate-block div.layers.n3 {
+  top: 32.5%;
+  left: 17.2%;
+  max-width: 44%;
+  background-image: url('http://pari-match2/anim-no-effect/Слой 6_.png');
+}
+.pari-land .animate-block img.layers.n4,
+.pari-land .animate-block div.layers.n4 {
+  top: 52.2%;
+  left: 9%;
+  max-width: 56.5%;
+  background-image: url('http://pari-match2/anim-no-effect/Слой 7_.png');
+}
+.pari-land .animate-block img.layers.n5,
+.pari-land .animate-block div.layers.n5 {
+  top: 55.64%;
+  left: 57.8%;
+  max-width: 38%;
+}
+.pari-land .animate-block img.layers.n6,
+.pari-land .animate-block div.layers.n6 {
+  top: 43.75%;
+  left: 10.8%;
+  max-width: 52.7%;
+  background-image: url('http://pari-match2/anim-no-effect/Слой 9_.png');
+}
+.pari-land .animate-block img.layers.n7,
+.pari-land .animate-block div.layers.n7 {
+  top: 77.05%;
+  left: 0.24%;
+  max-width: 56.5%;
+}
+.pari-land .animate-block img.layers.n8,
+.pari-land .animate-block div.layers.n8 {
+  top: 4.94%;
+  left: 25.9%;
+  max-width: 16%;
+  background-image: url('http://pari-match2/anim-no-effect/Слой 11_.png');
+}
+.pari-land .animate-block img.layers.n9,
+.pari-land .animate-block div.layers.n9 {
+  top: 65.08%;
+  left: 4%;
+  max-width: 74%;
+  background-image: url('http://pari-match2/anim-no-effect/Слой 12_.png');
+}
+.pari-land .animate-block img.layers.n10,
+.pari-land .animate-block div.layers.n10 {
+  top: 86.45%;
+  left: 21.4%;
+  max-width: 39%;
+  background-image: url('http://pari-match2/anim-no-effect/Слой 13_.png');
+}
+.pari-land .animate-block img.layers.n11,
+.pari-land .animate-block div.layers.n11 {
+  top: 59.9%;
+  left: 5.7%;
+  max-width: 54%;
+}
+.pari-land .animate-block img.layers.n12,
+.pari-land .animate-block div.layers.n12 {
+  top: 41.9%;
+  left: 13.1%;
+  max-width: 49.6%;
+}
+.pari-land .animate-block img.layers.n13,
+.pari-land .animate-block div.layers.n13 {
+  top: 8%;
+  left: 24.3%;
+  max-width: 19.0%;
+}
+.pari-land .animate-block img.layers.n14,
+.pari-land .animate-block div.layers.n14 {
+  top: 27.8%;
+  left: 26.7%;
+  max-width: 21.8%;
+}
+.pari-land .animate-block img.layers.n15,
+.pari-land .animate-block div.layers.n15 {
+  top: 49.58%;
+  left: 81.6%;
+  max-width: 18.2%;
+  background-image: url('http://pari-match2/anim-no-effect/Слой 18_.png');
+}
+.pari-land .animate-block img.layers:nth-child(odd),
+.pari-land .animate-block div.layers:nth-child(odd) {
+  animation-name: exampleLeft;
+}
+.pari-land .animate-block img.layers:nth-child(even),
+.pari-land .animate-block div.layers:nth-child(even) {
+  animation-name: exampleRight;
+}
+.pari-land .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+.pari-land .terms-info {
+  height: 0;
+  overflow-x: hidden;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(62, 40, 41, 0.55);
+  transition: 0.7s all;
+  padding: 30px 25px 0;
+  overflow-y: auto;
+  position: relative;
+}
+.pari-land .terms-info .btn_close {
+  color: #fff;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  float: right;
+  font-size: 28px;
+  margin-top: -5px;
+  text-shadow: none;
+  opacity: 0.4;
+  transition: 0.3s all;
+}
+.pari-land .terms-info .btn_close:hover {
+  opacity: 0.9;
+}
+.pari-land .terms-info::-webkit-scrollbar {
+  width: 5px;
+}
+.pari-land .terms-info::-webkit-scrollbar-track {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(62, 40, 41, 0.55);
+}
+.pari-land .terms-info::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.pari-land .terms-info p.text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.42;
+  color: #ffffff;
+}
+.pari-land .terms-info p.text:first-child {
+  margin-top: 25px;
+}
+.pari-land .terms-info p.text:last-child {
+  margin-bottom: 25px;
+}
+.pari-land .terms-wrap {
+  position: fixed;
+  left: 25%;
+  right: 25%;
+  bottom: 25vh;
+  visibility: hidden;
+}
+.pari-land .terms-wrap.active {
+  visibility: visible;
+}
+.pari-land .terms-wrap.active .terms-info {
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.77);
+}
+@media (max-width: 991px) {
+  .pari-land .terms-wrap {
+    left: 15px;
+    right: 15px;
+    bottom: 5%;
+    top: 5%;
+  }
+  .pari-land .terms-wrap.active .terms-info {
+    height: 100%;
+  }
+}
+@keyframes exampleRight {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes exampleLeft {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
